@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="calculator">
+        <form action="">
+            <div>
+                <input type="text" placeholder="0" id="input-text" readonly>
+                <input type="button" value="=" onclick="calculate()">
+            </div>
+            <div class="button">
+                <input type="button" value="7" onclick="displayFunction(7)">
+                <input type="button" value="8"onclick= " displayFunction(8)">
+                <input type="button" value="9" onclick="displayFunction(9)"> 
+                <input type="button" value="Del" onclick="deleteFunction()">
+            </div>
+            <div class="button">
+                <input type="button" value="4" onclick="displayFunction(4)">
+                <input type="button" value="5" onclick="displayFunction(5)">
+                <input type="button" value="6" onclick="displayFunction(6)"> 
+                <input type="button" value="X" onclick="displayFunction('*')">
+               
+            </div>
+            <div class="button">
+                <input type="button" value="1" onclick="displayFunction(1)">
+                <input type="button" value="2" onclick="displayFunction(2)">
+                <input type="button" value="3" onclick="displayFunction(3)"> 
+                <input type="button" value="+" onclick="displayFunction('+')">
+     
+            </div>
+            <div class="button">
+                <input type="button" value="." onclick="displayFunction('.'), dotDisplayFunction()">
+                <input type="button" value="0" onclick="displayFunction(0)">
+                <input type="button" value="/" onclick="displayFunction('/')">
+                <input type="button" value="-" onclick="displayFunction('-')">
+            </div>
+            <div class="button">    
+                <input type="button" value="00" onclick="displayFunction('00')">         
+                <input type="button" value="Clear" onclick="clearFunction()" class="clearButton">
+            </div>
+        </form>
+     </div>
+    <Script src="calculator.js"></Script>
+</body>
+</html>
