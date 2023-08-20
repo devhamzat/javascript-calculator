@@ -1,5 +1,4 @@
 var display = document.getElementById("input-text");
-var error = document.getElementById("input-text");
 function displayFunction(number){
     display.value += number;
 }
