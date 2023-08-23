@@ -1,20 +1,13 @@
 var errorMessage = "syntax error"
 function displayFunction(displayValue){
     var display = document.getElementById("input-text");
-    if(displayValue === '.' && (display.value.endsWith('.')|| display.value ==='')){
+    if(displayValue === '.' && (display.value.endsWith('.')|| display.value ==='') || displayValue === '+' && display.value.includes('+')||displayValue === '-' && display.value.includes('-')||displayValue === '*' && display.value.includes('*')|| displayValue === '/' && display.value.includes('/')){
         return "";
     }
-    if(displayValue === '+' && display.value.includes('+')){
-        return "";
-    }
-    if(displayValue === '-' && display.value.includes('-')){
-        return "";
-    }
-    if(displayValue === '*' && display.value.includes('*')){
-        return "";
-    }if(displayValue === '/' && display.value.includes('/')){
-        return "";
-    }
+    if ((displayValue === '+' || displayValue === '-' || displayValue === '*' || displayValue === '/') &&
+    (display.value.endsWith('+') || display.value.endsWith('-') || display.value.endsWith('*') || display.value.endsWith('/'))) {
+    return; 
+}
     display.value += displayValue
 }
 function calcButton(){
@@ -22,7 +15,7 @@ function calcButton(){
     try{
         display.value = eval(display.value);
     }catch(error){
-        alert("syntax error ")
+        alert(errorMessage);
     }
     }
    
@@ -34,6 +27,7 @@ function clearFunction(){
     var display = document.getElementById("input-text");
     display.value = "";
 }
+
 
 
 

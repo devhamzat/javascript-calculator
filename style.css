@@ -17,9 +17,8 @@
     border-radius: 20px;
     margin: auto;
     border: none;
-    justify-items: end;
-    font-weight: bold;
-    font-size: 100px;
+    font-weight: normal;
+    font-size:40px;
     justify-self: end;   
 }
 .calculator-content{
@@ -46,4 +45,7 @@
     background-color: turquoise;
     
 }
+.button:hover {
+    background-color: white;
+    }
 
