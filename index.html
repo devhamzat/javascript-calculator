@@ -12,26 +12,26 @@
     <div class="calculator">
         <form action="">
             <div>
-                <input type="text" placeholder="0" id="input-text" readonly ">
+                <input type="text" placeholder="0" id="input-text" readonly >
             </div>
             <div class="calculator-content" >
 
-                <input type="button" value="7" onclick="displayFunction(7)" class="button">
+                <input type="button" value="7" onclick="displayFunction(7) " class="button">
                 <input type="button" value="8" onclick="displayFunction(8)" class="button">
                 <input type="button" value="9" onclick="displayFunction(9)" class="button">
                 <input type="button" value="=" onclick="calcButton() " class="button calcButton" >
                 <input type="button" value="4" onclick="displayFunction(4)"  class="button">
                 <input type="button" value="5" onclick="displayFunction(5)"  class="button">
                 <input type="button" value="6" onclick="displayFunction(6)"  class="button">
-                <input type="button" value="X" onclick="displayFunction('*')" class="button operators" >
+                <input type="button" value="X" onclick=" changeOperator('*')" class="button operators" >
                 <input type="button" value="1" onclick="displayFunction(1)" class="button ">
                 <input type="button" value="2" onclick="displayFunction(2)" class="button">
                 <input type="button" value="3" onclick="displayFunction(3)"  class="button">
-                <input type="button" value="+" onclick="displayFunction('+')" class="button operators" >
+                <input type="button" value="+" onclick=" changeOperator('+')" class="button operators" >
                 <input type="button" value="." onclick="displayFunction('.')" class="button" >
                 <input type="button" value="0" onclick="displayFunction(0)" class="button">
-                <input type="button" value="/" onclick="displayFunction('/')" class="button operators" >
-                <input type="button" value="-" onclick="displayFunction('-')" class="button operators" >
+                <input type="button" value="/" onclick=" changeOperator('/')" class="button operators" >
+                <input type="button" value="-" onclick=" changeOperator('-')" class="button operators" >
                 <input type="button" value="00" onclick="displayFunction('00')" class="button">
                 <input type="button" value="Clear"onclick="clearFunction()" class="button specialButton">
                 <input type="button" value="Del" onclick="deleteFunction()" class="button specialButton">

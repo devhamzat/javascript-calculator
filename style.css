@@ -17,7 +17,7 @@
     border-radius: 20px;
     margin: auto;
     border: none;
-    font-weight: normal;
+    font-weight: bold;
     font-size:40px;
     justify-self: end;   
 }
@@ -48,4 +48,5 @@
 .button:hover {
     background-color: white;
     }
+
 
